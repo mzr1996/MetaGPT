@@ -13,8 +13,8 @@ from metagpt.provider.zhipuai_api import ZhiPuAILLM
 from metagpt.provider.azure_openai_api import AzureOpenAILLM
 from metagpt.provider.metagpt_api import MetaGPTLLM
 from metagpt.provider.human_provider import HumanProvider
-from metagpt.provider.spark_api import SparkLLM
-from metagpt.provider.qianfan_api import QianFanLLM
+# from metagpt.provider.spark_api import SparkLLM
+# from metagpt.provider.qianfan_api import QianFanLLM
 from metagpt.provider.dashscope_api import DashScopeLLM
 from metagpt.provider.anthropic_api import AnthropicLLM
 from metagpt.provider.bedrock_api import BedrockLLM
@@ -28,8 +28,8 @@ __all__ = [
     "MetaGPTLLM",
     "OllamaLLM",
     "HumanProvider",
-    "SparkLLM",
-    "QianFanLLM",
+    # "SparkLLM",
+    # "QianFanLLM",
     "DashScopeLLM",
     "AnthropicLLM",
     "BedrockLLM",
