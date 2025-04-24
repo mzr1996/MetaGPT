@@ -6,7 +6,7 @@
 @File    : __init__.py
 """
 
-from metagpt.provider.google_gemini_api import GeminiLLM
+# from metagpt.provider.google_gemini_api import GeminiLLM
 from metagpt.provider.ollama_api import OllamaLLM
 from metagpt.provider.openai_api import OpenAILLM
 from metagpt.provider.zhipuai_api import ZhiPuAILLM
@@ -21,7 +21,7 @@ from metagpt.provider.bedrock_api import BedrockLLM
 from metagpt.provider.ark_api import ArkLLM
 
 __all__ = [
-    "GeminiLLM",
+    # "GeminiLLM",
     "OpenAILLM",
     "ZhiPuAILLM",
     "AzureOpenAILLM",
