@@ -181,7 +181,7 @@ class Environment(ExtEnv):
         route the message to the message recipient is a problem addressed by the transport framework designed
         in RFC 113.
         """
-        logger.debug(f"publish_message: {message.dump()}")
+        logger.debug(f"publish_message: {str(message)}")
         found = False
         # According to the routing feature plan in Chapter 2.2.3.2 of RFC 113
         for role, addrs in self.member_addrs.items():
@@ -189,7 +189,7 @@ class Environment(ExtEnv):
                 role.put_message(message)
                 found = True
         if not found:
-            logger.warning(f"Message no recipients: {message.dump()}")
+            logger.warning(f"Message no recipients: {str(message)}")
         self.history += f"\n{message}"  # For debug
 
         return True
