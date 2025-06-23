@@ -114,10 +114,5 @@ setup(
     cmdclass={
         "install_mermaid": InstallMermaidCLI,
     },
-    entry_points={
-        "console_scripts": [
-            "metagpt=metagpt.software_company:app",
-        ],
-    },
     include_package_data=True,
 )
